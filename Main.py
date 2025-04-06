@@ -7,15 +7,15 @@ import users
 # DB=sql_con.connect(
 #     host='localhost',
 #     user='root',
-#     password='12345678',
+#     password='',
 #     database='temp'
 # )
 DB = sql_con.connect(
     database="dbms_proj",
-    host="mysql-129d035c-dbms-proj.h.aivencloud.com",
-    password="AVNS_lsv-j0cT7m3_tAcZhMz",
-    port=24830,
-    user="avnadmin"
+    host="hostname",
+    password="your password",
+    port=00000,
+    user="user name"
     )
 cursor=DB.cursor()
 
