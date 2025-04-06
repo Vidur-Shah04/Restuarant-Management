@@ -32,11 +32,11 @@ def validate_password(password):
 
 def fetch_bill_id():
     DB = sql_con.connect(
-    database="dbms_proj",
-    host="mysql-129d035c-dbms-proj.h.aivencloud.com",
-    password="AVNS_lsv-j0cT7m3_tAcZhMz",
-    port=24830,
-    user="avnadmin"
+       database="dbms_proj",
+    host="hostname",
+    password="your password",
+    port=00000,
+    user="user name"
     )
     cursor=DB.cursor()
     cursor.execute("select max(bill_id) from bills;")
@@ -48,10 +48,10 @@ def fetch_bill_id():
 def new_user(uname,passwd):
     DB = sql_con.connect(
     database="dbms_proj",
-    host="mysql-129d035c-dbms-proj.h.aivencloud.com",
-    password="AVNS_lsv-j0cT7m3_tAcZhMz",
-    port=24830,
-    user="avnadmin"
+    host="hostname",
+    password="your password",
+    port=00000,
+    user="user name"
     )
     cursor=DB.cursor()
     cursor.execute(f"select user_id from users where user_id = '{uname}';")
@@ -72,10 +72,10 @@ def new_user(uname,passwd):
 def login_user(uname,passwd):
     DB = sql_con.connect(
     database="dbms_proj",
-    host="mysql-129d035c-dbms-proj.h.aivencloud.com",
-    password="AVNS_lsv-j0cT7m3_tAcZhMz",
-    port=24830,
-    user="avnadmin"
+    host="hostname",
+    password="your password",
+    port=00000,
+    user="user name"
     )
     cursor=DB.cursor()
     cursor.execute(f"select * from users where user_id = '{uname}';")
@@ -100,10 +100,10 @@ def login_user(uname,passwd):
 def delete_user(user_id_input):
     DB = sql_con.connect(
     database="dbms_proj",
-    host="mysql-129d035c-dbms-proj.h.aivencloud.com",
-    password="AVNS_lsv-j0cT7m3_tAcZhMz",
-    port=24830,
-    user="avnadmin"
+    host="hostname",
+    password="your password",
+    port=00000,
+    user="user name"
 )
     cursor = DB.cursor()
     try:
@@ -116,10 +116,10 @@ def delete_user(user_id_input):
 def fetch_bills(user_id):
     DB = sql_con.connect(
     database="dbms_proj",
-    host="mysql-129d035c-dbms-proj.h.aivencloud.com",
-    password="AVNS_lsv-j0cT7m3_tAcZhMz",
-    port=24830,
-    user="avnadmin"
+    host="hostname",
+    password="your password",
+    port=00000,
+    user="user name"
 )
     cursor = DB.cursor()
     cursor.execute(
